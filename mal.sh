@@ -4,6 +4,7 @@ https://github.com/DidierStevens/DidierStevensSuite.git
 https://github.com/plusvic/yara.git
 https://github.com/Yara-Rules/rules.git
 https://github.com/cuckoosandbox/cuckoo.git
+https://github.com/volatilityfoundation/volatility.git
 EOF`
 cd /opt
 for i in $a
@@ -15,3 +16,4 @@ apt-get update && apt-get upgrade && \
 apt-get install git libssl-dev bison libjansson-dev
 apt-get install dh-autoreconf
 apt-get install dh-autoreconf
+apt-get install proftpd
