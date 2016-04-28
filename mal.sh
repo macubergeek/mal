@@ -3,11 +3,10 @@ a=`cat <<-EOF
 https://github.com/DidierStevens/DidierStevensSuite.git
 https://github.com/plusvic/yara.git
 https://github.com/Yara-Rules/rules.git
-https://github.com/cuckoosandbox/cuckoo.git
 https://github.com/volatilityfoundation/volatility.git
 https://github.com/cuckoosandbox/community.git
 EOF`
-cd /opt
+cd ../
 for i in $a
 do
 git clone $i
