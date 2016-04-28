@@ -2,8 +2,6 @@
 a=`cat <<-EOF
 https://github.com/DidierStevens/DidierStevensSuite.git
 https://github.com/plusvic/yara.git
-https://github.com/cuckoosandbox/cuckoo.git
-https://github.com/cuckoosandbox/community.git
 https://github.com/buguroo/cuckooautoinstall.git
 https://github.com/volatilityfoundation/volatility.git
 https://github.com/Yara-Rules/rules.git
