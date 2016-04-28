@@ -4,7 +4,6 @@ sudo apt-get install mongodb git
 cd /home/cuckoo/cuckoo
 sudo pip install -r requirements.txt
 
-sudo apt-get install virtualbox && \
 sudo usermod -a -G vboxusers cuckoo && \
 sudo usermod -a -G libvirtd cuckoo && \
 sudo ip link set vboxnet0 up
