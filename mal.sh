@@ -13,6 +13,6 @@ for i in $a
 do
 git clone $i
 done
-wget https://googledrive.com/host/0B6fULLT_NpxMQ1Rrb1drdW42SkE/remnux-6.0-ova-public.ova
+#wget https://googledrive.com/host/0B6fULLT_NpxMQ1Rrb1drdW42SkE/remnux-6.0-ova-public.ova
 apt-get update && apt-get upgrade && \
 apt-get install git libssl-dev bison libjansson-dev
