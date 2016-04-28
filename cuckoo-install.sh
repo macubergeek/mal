@@ -1,7 +1,7 @@
 #!/bin/bash
 sudo apt-get install python python-pip python-dev libffi-dev libssl-dev
 sudo apt-get install mongodb git
-cd cuckoo
+cd /home/cuckoo/cuckoo
 sudo pip install -r requirements.txt
 
 sudo apt-get install virtualbox && \

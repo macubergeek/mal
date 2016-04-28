@@ -17,3 +17,4 @@ apt-get install git libssl-dev bison libjansson-dev
 apt-get install dh-autoreconf
 apt-get install dh-autoreconf
 apt-get install proftpd
+apt-get install volatility
