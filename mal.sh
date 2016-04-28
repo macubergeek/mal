@@ -14,3 +14,4 @@ done
 apt-get update && apt-get upgrade && \
 apt-get install git libssl-dev bison libjansson-dev
 apt-get install dh-autoreconf
+apt-get install dh-autoreconf
