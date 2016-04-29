@@ -1,4 +1,5 @@
 #!/bin/bash
+sudo tar xvf ../cuckoo-current.tar
 sudo apt-get install python python-pip python-dev libffi-dev libssl-dev
 sudo apt-get install mongodb && \
 cd /home/cuckoo/cuckoo
