@@ -396,445 +396,445 @@ strings:
 condition:
 	any of them
 }
-rule InternetReadFile: This function reads data from a previously opened URL.
+rule InternetReadFile
 {
 meta:
-	my_identifier_1 = "blah"
+	my_identifier_1 = "This function reads data from a previously opened URL."
 strings:
 	$a = "InternetReadFile"
 condition:
 	any of them
 }
-rule InternetWriteFile: This function writes data to a previously opened URL.
+rule InternetWriteFile
 {
 meta:
-	my_identifier_1 = "blah"
+	my_identifier_1 = "This function writes data to a previously opened URL."
 strings:
 	$a = "InternetWriteFile"
 condition:
 	any of them
 }
-rule IsNTAdmin: This function checks if the user has administrator privileges.
+rule IsNTAdmin
 {
 meta:
-	my_identifier_1 = "blah"
+	my_identifier_1 = "This function checks if the user has administrator privileges."
 strings:
 	$a = "IsNTAdmin"
 condition:
 	any of them
 }
-rule IsWoW64Process: This function is used by a 32-bit process to determine if it is running on a 64-bit operating system.
+rule IsWoW64Process
 {
 meta:
-	my_identifier_1 = "blah"
+	my_identifier_1 = "This function is used by a 32-bit process to determine if it is running on a 64-bit operating system."
 strings:
 	$a = "IsWoW64Process"
 condition:
 	any of them
 }
-rule LdrLoadDll: This is a low-level function to load a DLL into a process, just like LoadLibrary. Normal programs use LoadLibrary, and the presence of this import may indicate a program that is attempting to be stealthy.
+rule LdrLoadDll
 {
 meta:
-	my_identifier_1 = "blah"
+	my_identifier_1 = "This is a low-level function to load a DLL into a process, just like LoadLibrary. Normal programs use LoadLibrary, and the presence of this import may indicate a program that is attempting to be stealthy."
 strings:
 	$a = "LdrLoadDll"
 condition:
 	any of them
 }
-rule LoadResource: This function loads a resource from a PE file into memory. Malware sometimes uses resources to store strings, configuration information, or other malicious files.
+rule LoadResource
 {
 meta:
-	my_identifier_1 = "blah"
+	my_identifier_1 = "This function loads a resource from a PE file into memory. Malware sometimes uses resources to store strings, configuration information, or other malicious files."
 strings:
 	$a = "LoadResource"
 condition:
 	any of them
 }
-rule LsaEnumerateLogonSessions: This function is used to enumerate through logon sessions on the current system, which can be used as part of a credential stealer.
+rule LsaEnumerateLogonSessions
 {
 meta:
-	my_identifier_1 = "blah"
+	my_identifier_1 = "This function is used to enumerate through logon sessions on the current system, which can be used as part of a credential stealer."
 strings:
 	$a = "LsaEnumerateLogonSessions"
 condition:
 	any of them
 }
-rule MapViewOfFile: This function is used to map a file into memory and makes the contents of the file accessible via memory addresses. Launchers, loaders, and injectors use this function to read and modify PE files. By using MapViewOfFile, the malware can avoid using WriteFile to modify the contents of a file.
+rule MapViewOfFile
 {
 meta:
-	my_identifier_1 = "blah"
+	my_identifier_1 = "This function is used to map a file into memory and makes the contents of the file accessible via memory addresses. Launchers, loaders, and injectors use this function to read and modify PE files. By using MapViewOfFile, the malware can avoid using WriteFile to modify the contents of a file."
 strings:
 	$a = "MapViewOfFile"
 condition:
 	any of them
 }
-rule MapVirtualKey: This function is used to translate a virtual-key code into a character value. It is often used by keylogging malware.
+rule MapVirtualKey
 {
 meta:
-	my_identifier_1 = "blah"
+	my_identifier_1 = "This function is used to translate a virtual-key code into a character value. It is often used by keylogging malware."
 strings:
 	$a = "MapVirtualKey"
 condition:
 	any of them
 }
-rule Module32First-Module32Next: This function is used to enumerate through modules loaded into a process. Injectors use this function to determine where to inject code.
+rule Module32First-Module32Next
 {
 meta:
-	my_identifier_1 = "blah"
+	my_identifier_1 = "This function is used to enumerate through modules loaded into a process. Injectors use this function to determine where to inject code."
 strings:
 	$a = "Module32First"
 	$b = "Module32Next"
 condition:
 	any of them
 }
-rule NetScheduleJobAdd: This function submits a request for a program to be run at a specified date and time. Malware can use NetScheduleJobAdd to run a different program. This is an important indicator to see the program that is scheduled to run at future time.
+rule NetScheduleJobAdd
 {
 meta:
-	my_identifier_1 = "blah"
+	my_identifier_1 = "This function submits a request for a program to be run at a specified date and time. Malware can use NetScheduleJobAdd to run a different program. This is an important indicator to see the program that is scheduled to run at future time."
 strings:
 	$a = "NetScheduleJobAdd"
 condition:
 	any of them
 }
-rule NetShareEnum: This function is used to enumerate network shares.
+rule NetShareEnum
 {
 meta:
-	my_identifier_1 = "blah"
+	my_identifier_1 = "This function is used to enumerate network shares."
 strings:
 	$a = "NetShareEnum"
 condition:
 	any of them
 }
-rule NtQueryDirectoryFile: This function returns information about files in a directory. Rootkits commonly hook this function in order to hide files.
+rule NtQueryDirectoryFile
 {
 meta:
-	my_identifier_1 = "blah"
+	my_identifier_1 = "This function returns information about files in a directory. Rootkits commonly hook this function in order to hide files."
 strings:
 	$a = "NtQueryDirectoryFile"
 condition:
 	any of them
 }
-rule NtQueryInformationProcess: This function is used to return various information about a specified process. This function is sometimes used as an anti-debugging technique because it can return the same information as CheckRemoteDebuggerPresent.
+rule NtQueryInformationProcess
 {
 meta:
-	my_identifier_1 = "blah"
+	my_identifier_1 = "This function is used to return various information about a specified process. This function is sometimes used as an anti-debugging technique because it can return the same information as CheckRemoteDebuggerPresent."
 strings:
 	$a = "NtQueryInformationProcess"
 condition:
 	any of them
 }
-rule NtSetInformationProcess: This function is used to change the privilege level of a program or to bypass Data Execution Prevention (DEP).
+rule NtSetInformationProcess
 {
 meta:
-	my_identifier_1 = "blah"
+	my_identifier_1 = "This function is used to change the privilege level of a program or to bypass Data Execution Prevention (DEP)."
 strings:
 	$a = "NtSetInformationProcess"
 condition:
 	any of them
 }
-rule OpenMutex: This function opens a handle to a mutual exclusion object that can be used by malware to ensure that only a single instance of malware is running on a system at any given time. Malware often uses fixed names for mutexes, which can be good host-based indicators.
+rule OpenMutex
 {
 meta:
-	my_identifier_1 = "blah"
+	my_identifier_1 = "This function opens a handle to a mutual exclusion object that can be used by malware to ensure that only a single instance of malware is running on a system at any given time. Malware often uses fixed names for mutexes, which can be good host-based indicators."
 strings:
 	$a = "OpenMutex"
 condition:
 	any of them
 }
-rule OpenProcess: This function is used to open a handle to another process running on the system. This handle can be used to read and write to the other process memory or to inject code into the other process.
+rule OpenProcess
 {
 meta:
-	my_identifier_1 = "blah"
+	my_identifier_1 = "This function is used to open a handle to another process running on the system. This handle can be used to read and write to the other process memory or to inject code into the other process."
 strings:
 	$a = "OpenProcess"
 condition:
 	any of them
 }
-rule OutputDebugString: This function is used to output a string to a debugger if one is attached. This can be used as an anti-debugging technique.
+rule OutputDebugString
 {
 meta:
-	my_identifier_1 = "blah"
+	my_identifier_1 = "This function is used to output a string to a debugger if one is attached. This can be used as an anti-debugging technique."
 strings:
 	$a = "OutputDebugString"
 condition:
 	any of them
 }
-rule PeekNamedPipe: This function is used to copy data from a named pipe without removing data from the pipe. This function is popular with reverse shells.
+rule PeekNamedPipe
 {
 meta:
-	my_identifier_1 = "blah"
+	my_identifier_1 = "This function is used to copy data from a named pipe without removing data from the pipe. This function is popular with reverse shells."
 strings:
 	$a = "PeekNamedPipe"
 condition:
 	any of them
 }
-rule Process32First-Process32Next: This function is used to begin enumerating processes from a previous call to CreateToolhelp32Snapshot. Malware often enumerates through processes to find a process into which to inject.
+rule Process32First-Process32Next
 {
 meta:
-	my_identifier_1 = "blah"
+	my_identifier_1 = "This function is used to begin enumerating processes from a previous call to CreateToolhelp32Snapshot. Malware often enumerates through processes to find a process into which to inject."
 strings:
 	$a = "Process32First"
 	$b = "Process32Next"
 condition:
 	any of them
 }
-rule QueueUserAPC: This function is used to execute code for a different thread. Malware sometimes uses QueueUserAPC to inject code into another process.
+rule QueueUserAPC
 {
 meta:
-	my_identifier_1 = "blah"
+	my_identifier_1 = "This function is used to execute code for a different thread. Malware sometimes uses QueueUserAPC to inject code into another process."
 strings:
 	$a = "QueueUserAPC"
 condition:
 	any of them
 }
-rule ReadProcessMemory: This function is used to read the memory of a remote process.
+rule ReadProcessMemory
 {
 meta:
-	my_identifier_1 = "blah"
+	my_identifier_1 = "This function is used to read the memory of a remote process."
 strings:
 	$a = "ReadProcessMemory"
 condition:
 	any of them
 }
-rule Recv: This function is used to receive data from a remote machine. Malware often uses this function to receive data from a remote command-and-control server.
+rule Recv
 {
 meta:
-	my_identifier_1 = "blah"
+	my_identifier_1 = "This function is used to receive data from a remote machine. Malware often uses this function to receive data from a remote command-and-control server."
 strings:
 	$a = "Recv"
 condition:
 	any of them
 }
-rule RegisterHotKey: This function is used to register a handler to be notified anytime a user enters a particular key combination (like CTRL-ALT-J), regardless of which window is active when the user presses the key combination. This function is sometimes used by spyware that remains hidden from the user until the key combination is pressed.
+rule RegisterHotKey
 {
 meta:
-	my_identifier_1 = "blah"
+	my_identifier_1 = "This function is used to register a handler to be notified anytime a user enters a particular key combination (like CTRL-ALT-J), regardless of which window is active when the user presses the key combination. This function is sometimes used by spyware that remains hidden from the user until the key combination is pressed."
 strings:
 	$a = "RegisterHotKey"
 condition:
 	any of them
 }
-rule RegOpenKey: This function is used to open a handle to a registry key for reading and editing. Registry keys are sometimes written as a way for software to achieve persistence on a host. The registry also contains a whole host of operating system and application setting information.
+rule RegOpenKey
 {
 meta:
-	my_identifier_1 = "blah"
+	my_identifier_1 = "This function is used to open a handle to a registry key for reading and editing. Registry keys are sometimes written as a way for software to achieve persistence on a host. The registry also contains a whole host of operating system and application setting information."
 strings:
 	$a = "RegOpenKey"
 condition:
 	any of them
 }
-rule ResumeThread: This function is used to resume a previously suspended thread. ResumeThread is used as part of several injection techniques.
+rule ResumeThread
 {
 meta:
-	my_identifier_1 = "blah"
+	my_identifier_1 = "This function is used to resume a previously suspended thread. ResumeThread is used as part of several injection techniques."
 strings:
 	$a = "ResumeThread"
 condition:
 	any of them
 }
-rule RtlCreateRegistryKey: This function is used to create a registry from kernel-mode code.
+rule RtlCreateRegistryKey
 {
 meta:
-	my_identifier_1 = "blah"
+	my_identifier_1 = "This function is used to create a registry from kernel-mode code."
 strings:
 	$a = "RtlCreateRegistryKey"
 condition:
 	any of them
 }
-rule RtlWriteRegistryValue: This function is used to write a value to the registry from kernel-mode code.
+rule RtlWriteRegistryValue
 {
 meta:
-	my_identifier_1 = "blah"
+	my_identifier_1 = "This function is used to write a value to the registry from kernel-mode code."
 strings:
 	$a = "RtlWriteRegistryValue"
 condition:
 	any of them
 }
-rule SamIConnect: This function is used to connect to the Security Account Manager (SAM) in order to make future calls that access credential information. Hash-dumping programs access the SAM database in order to retrieve the hash of users’ login passwords.
+rule SamIConnect
 {
 meta:
-	my_identifier_1 = "blah"
+	my_identifier_1 = "This function is used to connect to the Security Account Manager (SAM) in order to make future calls that access credential information. Hash-dumping programs access the SAM database in order to retrieve the hash of users’ login passwords."
 strings:
 	$a = "SamIConnect"
 condition:
 	any of them
 }
-rule SamIGetPrivateData: This function is used to query the private information about a specific user from the Security Account Manager (SAM) database. Hash-dumping programs access the SAM database in order to retrieve the hash of users’ login passwords.
+rule SamIGetPrivateData
 {
 meta:
-	my_identifier_1 = "blah"
+	my_identifier_1 = "This function is used to query the private information about a specific user from the Security Account Manager (SAM) database. Hash-dumping programs access the SAM database in order to retrieve the hash of users’ login passwords."
 strings:
 	$a = "SamIGetPrivateData"
 condition:
 	any of them
 }
-rule SamQueryInformationUse: This function is used to query information about a specific user in the Security Account Manager (SAM) database. Hash-dumping programs access the SAM database in order to retrieve the hash of users’ login passwords.
+rule SamQueryInformationUse
 {
 meta:
-	my_identifier_1 = "blah"
+	my_identifier_1 = "This function is used to query information about a specific user in the Security Account Manager (SAM) database. Hash-dumping programs access the SAM database in order to retrieve the hash of users’ login passwords."
 strings:
 	$a = "SamQueryInformationUse"
 condition:
 	any of them
 }
-rule Send: This function is used to send data to a remote machine. It is often used by malwares to send data to a remote command-and-control server.
+rule Send
 {
 meta:
-	my_identifier_1 = "blah"
+	my_identifier_1 = "This function is used to send data to a remote machine. It is often used by malwares to send data to a remote command-and-control server."
 strings:
 	$a = "Send"
 condition:
 	any of them
 }
-rule SetFileTime: This function is used to modify the creation, access, or last modified time of a file. Malware often uses this function to conceal malicious activity.
+rule SetFileTime
 {
 meta:
-	my_identifier_1 = "blah"
+	my_identifier_1 = "This function is used to modify the creation, access, or last modified time of a file. Malware often uses this function to conceal malicious activity."
 strings:
 	$a = "SetFileTime"
 condition:
 	any of them
 }
-rule SetThreadContext: This function is used to modify the context of a given thread. Some injection techniques use SetThreadContext.
+rule SetThreadContext
 {
 meta:
-	my_identifier_1 = "blah"
+	my_identifier_1 = "This function is used to modify the context of a given thread. Some injection techniques use SetThreadContext."
 strings:
 	$a = "SetThreadContext"
 condition:
 	any of them
 }
-rule SetWindowsHookEx: This function is used to set a hook function to be called whenever a certain event is called. Commonly used with keyloggers and spyware, this function also provides an easy way to load a DLL into all GUI processes on the system. This function is sometimes added by the compiler.
+rule SetWindowsHookEx
 {
 meta:
-	my_identifier_1 = "blah"
+	my_identifier_1 = "This function is used to set a hook function to be called whenever a certain event is called. Commonly used with keyloggers and spyware, this function also provides an easy way to load a DLL into all GUI processes on the system. This function is sometimes added by the compiler."
 strings:
 	$a = "SetWindowsHookEx"
 condition:
 	any of them
 }
-rule SfcTerminateWatcherThread: This function is used to disable Windows file protection and modify files that otherwise would be protected.
+rule SfcTerminateWatcherThread
 {
 meta:
-	my_identifier_1 = "blah"
+	my_identifier_1 = "This function is used to disable Windows file protection and modify files that otherwise would be protected."
 strings:
 	$a = "SfcTerminateWatcherThread"
 condition:
 	any of them
 }
-rule ShellExecute: This function is used to execute another program.
+rule ShellExecute
 {
 meta:
-	my_identifier_1 = "blah"
+	my_identifier_1 = "This function is used to execute another program."
 strings:
 	$a = "ShellExecute"
 condition:
 	any of them
 }
-rule StartServiceCtrlDispatcher: This function is used by a service to connect the main thread of the process to the service control manager. Any process that runs as a service must call this function within 30 seconds of startup. Locating this function in malware will tell that the function should be run as a service.
+rule StartServiceCtrlDispatcher
 {
 meta:
-	my_identifier_1 = "blah"
+	my_identifier_1 = "This function is used by a service to connect the main thread of the process to the service control manager. Any process that runs as a service must call this function within 30 seconds of startup. Locating this function in malware will tell that the function should be run as a service."
 strings:
 	$a = "StartServiceCtrlDispatcher"
 condition:
 	any of them
 }
-rule SuspendThread: This function is used to suspend a thread so that it stops running. Malware will sometimes suspend a thread in order to modify it by performing code injection.
+rule SuspendThread
 {
 meta:
-	my_identifier_1 = "blah"
+	my_identifier_1 = "This function is used to suspend a thread so that it stops running. Malware will sometimes suspend a thread in order to modify it by performing code injection."
 strings:
 	$a = "SuspendThread"
 condition:
 	any of them
 }
-rule System: This function is used to run another program provided by some C runtime libraries. On Windows, this function serves as a wrapper function to CreateProcess.
+rule System
 {
 meta:
-	my_identifier_1 = "blah"
+	my_identifier_1 = "This function is used to run another program provided by some C runtime libraries. On Windows, this function serves as a wrapper function to CreateProcess."
 strings:
 	$a = "System"
 condition:
 	any of them
 }
-rule Thread32First-Thread32Next: This function is used to iterate through the threads of a process. Injectors use these functions to find an appropriate thread into which to inject.
+rule Thread32First-Thread32Next
 {
 meta:
-	my_identifier_1 = "blah"
+	my_identifier_1 = "This function is used to iterate through the threads of a process. Injectors use these functions to find an appropriate thread into which to inject."
 strings:
 	$a = "Thread32First"
 	$b = "Thread32Next"
 condition:
 	any of them
 }
-rule Toolhelp32ReadProcessMemory: This function is used to read the memory of a remote process.
+rule Toolhelp32ReadProcessMemory
 {
 meta:
-	my_identifier_1 = "blah"
+	my_identifier_1 = "This function is used to read the memory of a remote process."
 strings:
 	$a = "Toolhelp32ReadProcessMemory"
 condition:
 	any of them
 }
-rule URLDownloadToFile: This function is used to download a file from a web server and save it to disk. This function is popular with downloaders because it implements all the functionality of a downloader in one function call.
+rule URLDownloadToFile
 {
 meta:
-	my_identifier_1 = "blah"
+	my_identifier_1 = "This function is used to download a file from a web server and save it to disk. This function is popular with downloaders because it implements all the functionality of a downloader in one function call."
 strings:
 	$a = "URLDownloadToFile"
 condition:
 	any of them
 }
-rule VirtualAllocEx: This function is a memory-allocation routine that can allocate memory in a remote process. Malware sometimes uses VirtualAllocEx as part of process injection.
+rule VirtualAllocEx
 {
 meta:
-	my_identifier_1 = "blah"
+	my_identifier_1 = "This function is a memory-allocation routine that can allocate memory in a remote process. Malware sometimes uses VirtualAllocEx as part of process injection."
 strings:
 	$a = "VirtualAllocEx"
 condition:
 	any of them
 }
-rule VirtualProtectEx: This function is used to change the protection on a region of memory. Malware may use this function to change a read-only section of memory to an executable.
+rule VirtualProtectEx
 {
 meta:
-	my_identifier_1 = "blah"
+	my_identifier_1 = "This function is used to change the protection on a region of memory. Malware may use this function to change a read-only section of memory to an executable."
 strings:
 	$a = "VirtualProtectEx"
 condition:
 	any of them
 }
-rule WideCharToMultiByte: This function is used to convert a Unicode string into an ASCII string.
+rule WideCharToMultiByte
 {
 meta:
-	my_identifier_1 = "blah"
+	my_identifier_1 = "This function is used to convert a Unicode string into an ASCII string."
 strings:
 	$a = "WideCharToMultiByte"
 condition:
 	any of them
 }
-rule WinExec: This function is used to execute another program.
+rule WinExec
 {
 meta:
-	my_identifier_1 = "blah"
+	my_identifier_1 = "This function is used to execute another program."
 strings:
 	$a = "WinExec"
 condition:
 	any of them
 }
-rule WriteProcessMemory: This function is used to write data to a remote process. Malware uses WriteProcessMemory as part of process injection.
+rule WriteProcessMemory
 {
 meta:
-	my_identifier_1 = "blah"
+	my_identifier_1 = "This function is used to write data to a remote process. Malware uses WriteProcessMemory as part of process injection."
 strings:
 	$a = "WriteProcessMemory"
 condition:
 	any of them
 }
-rule WSAStartup: This function is used to initialize low-level network functionality. Finding calls to WSAStartup can often be an easy way to locate the start of network related functionality.
+rule WSAStartup
 {
 meta:
-	my_identifier_1 = "blah"
+	my_identifier_1 = "This function is used to initialize low-level network functionality. Finding calls to WSAStartup can often be an easy way to locate the start of network related functionality."
 strings:
 	$a = "WSAStartup"
 condition:
