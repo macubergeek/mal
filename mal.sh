@@ -5,8 +5,9 @@ https://github.com/Yara-Rules/rules.git
 https://github.com/volatilityfoundation/volatility.git
 https://github.com/cuckoosandbox/community.git
 https://github.com/cuckoosandbox/cuckoo.git
+https://github.com/buguroo/cuckooautoinstall.git
 EOF`
-#cd /opt
+cd /opt
 for i in $a
 do
 git clone $i
