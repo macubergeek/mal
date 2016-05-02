@@ -6,6 +6,7 @@ https://github.com/volatilityfoundation/volatility.git
 https://github.com/cuckoosandbox/community.git
 https://github.com/cuckoosandbox/cuckoo.git
 https://github.com/buguroo/cuckooautoinstall.git
+https://github.com/ChrisTruncer/Just-Metadata.git
 EOF`
 cd /opt
 for i in $a
