@@ -1,0 +1,585 @@
+/* config.h.in.  Generated from configure.ac by autoheader.  */
+
+/* Define if building universal (internal helper macro) */
+#undef AC_APPLE_UNIVERSAL_BUILD
+
+/* We are compiling bulk_extractor */
+#undef BULK_EXTRACTOR
+
+/* GCC supports #pragma GCC diagnostic */
+#undef DFXML_GNUC_HAS_DIAGNOSTIC_PRAGMA
+
+/* Use FLEX-based scanners */
+#undef FLEXSCANNERS_ENABLED
+
+/* enable AddressSanitizer */
+#undef HAVE_ADDRESS_SANITIZER
+
+/* Do we have afflib/afflib.h? */
+#undef HAVE_AFFLIB_AFFLIB_H
+
+/* Define to 1 if you have the <alloca.h> header file. */
+#undef HAVE_ALLOCA_H
+
+/* Define to 1 if you have the <arpa/inet.h> header file. */
+#undef HAVE_ARPA_INET_H
+
+/* define to 1 if __asm__ CPUID is available */
+#undef HAVE_ASM_CPUID
+
+/* define if the Boost library is available */
+#undef HAVE_BOOST
+
+/* define if the Boost::Filesystem library is available */
+#undef HAVE_BOOST_FILESYSTEM
+
+/* define if the Boost::IOStreams library is available */
+#undef HAVE_BOOST_IOSTREAMS
+
+/* define if the Boost::System library is available */
+#undef HAVE_BOOST_SYSTEM
+
+/* define to 1 if strchr takes const char* */
+#undef HAVE_CONFORMING_STRCHR
+
+/* Define to 1 if you have the <CoreServices/CoreServices.h> header file. */
+#undef HAVE_CORESERVICES_CORESERVICES_H
+
+/* Define to 1 if you have the `CreateProcess' function. */
+#undef HAVE_CREATEPROCESS
+
+/* define if the compiler supports basic C++11 syntax */
+#undef HAVE_CXX11
+
+/* define 1 if GCC supports -Wcast-align */
+#undef HAVE_DIAGNOSTIC_CAST_ALIGN
+
+/* define 1 if GCC supports -Wcast-qual */
+#undef HAVE_DIAGNOSTIC_CAST_QUAL
+
+/* define 1 if GCC supports -Wdeprecated-register */
+#undef HAVE_DIAGNOSTIC_DEPRECATED_REGISTER
+
+/* define 1 if GCC supports -Weffc++ */
+#undef HAVE_DIAGNOSTIC_EFFCPP
+
+/* define 1 if GCC supports -Wredundant-decls */
+#undef HAVE_DIAGNOSTIC_REDUNDANT_DECLS
+
+/* define 1 if GCC supports -Wshadow */
+#undef HAVE_DIAGNOSTIC_SHADOW
+
+/* define 1 if GCC supports -Wsuggest-attribute=noreturn */
+#undef HAVE_DIAGNOSTIC_SUGGEST_ATTRIBUTE
+
+/* define 1 if GCC supports -Wundef */
+#undef HAVE_DIAGNOSTIC_UNDEF
+
+/* Define to 1 if you have the <dirent.h> header file. */
+#undef HAVE_DIRENT_H
+
+/* Define to 1 if you have the <dlfcn.h> header file. */
+#undef HAVE_DLFCN_H
+
+/* Define to 1 if you have the `dlopen' function. */
+#undef HAVE_DLOPEN
+
+/* Define to 1 if you have the `dlopen_preflight' function. */
+#undef HAVE_DLOPEN_PREFLIGHT
+
+/* Define to 1 if you have the `err' function. */
+#undef HAVE_ERR
+
+/* Define to 1 if you have the <errno.h> header file. */
+#undef HAVE_ERRNO_H
+
+/* Define to 1 if you have the `errx' function. */
+#undef HAVE_ERRX
+
+/* Define to 1 if you have the <err.h> header file. */
+#undef HAVE_ERR_H
+
+/* Define to 1 if you have the `EVP_get_digestbyname' function. */
+#undef HAVE_EVP_GET_DIGESTBYNAME
+
+/* define 1 if EXIV2 exists and works */
+#undef HAVE_EXIV2
+
+/* Define to 1 if you have the <exiv2/error.hpp> header file. */
+#undef HAVE_EXIV2_ERROR_HPP
+
+/* Define to 1 if you have the <exiv2/exif.hpp> header file. */
+#undef HAVE_EXIV2_EXIF_HPP
+
+/* Define to 1 if you have the <exiv2/image.hpp> header file. */
+#undef HAVE_EXIV2_IMAGE_HPP
+
+/* define 1 if EXIV2 exists and works */
+#undef HAVE_EXIV2__LOGMSG__SETLEVEL
+
+/* Define to 1 if you have the <expat.h> header file. */
+#undef HAVE_EXPAT_H
+
+/* Define to 1 if you have the <fcntl.h> header file. */
+#undef HAVE_FCNTL_H
+
+/* Define to 1 if you have the `fork' function. */
+#undef HAVE_FORK
+
+/* Define to 1 if you have the `gethostname' function. */
+#undef HAVE_GETHOSTNAME
+
+/* Define to 1 if you have the `getpwuid' function. */
+#undef HAVE_GETPWUID
+
+/* Define to 1 if you have the `getrusage' function. */
+#undef HAVE_GETRUSAGE
+
+/* Define to 1 if you have the `getuid' function. */
+#undef HAVE_GETUID
+
+/* Define to 1 if you have the `getwpuid' function. */
+#undef HAVE_GETWPUID
+
+/* Define to 1 if you have the `gmtime_r' function. */
+#undef HAVE_GMTIME_R
+
+/* define 1 to build the hashdb scanner */
+#undef HAVE_HASHDB
+
+/* Define to 1 if you have the `IncrementAtomic' function. */
+#undef HAVE_INCREMENTATOMIC
+
+/* Define to 1 if you have the `inet_ntop' function. */
+#undef HAVE_INET_NTOP
+
+/* Define to 1 if you have the `InterlockedIncrement' function. */
+#undef HAVE_INTERLOCKEDINCREMENT
+
+/* Define to 1 if you have the <inttypes.h> header file. */
+#undef HAVE_INTTYPES_H
+
+/* Define to 1 if you have the `ishexnumber' function. */
+#undef HAVE_ISHEXNUMBER
+
+/* Define to 1 if you have the `isxdigit' function. */
+#undef HAVE_ISXDIGIT
+
+/* Define to 1 if you have the `le64toh' function. */
+#undef HAVE_LE64TOH
+
+/* Define to 1 if you have the `afflib' library (-lafflib). */
+#undef HAVE_LIBAFFLIB
+
+/* Define to 1 if you have the `crypto' library (-lcrypto). */
+#undef HAVE_LIBCRYPTO
+
+/* Define to 1 if you have the `dl' library (-ldl). */
+#undef HAVE_LIBDL
+
+/* Define to 1 if you have the `ewf' library (-lewf). */
+#undef HAVE_LIBEWF
+
+/* Define to 1 if you have the `libewf_error_backtrace_fprint' function. */
+#undef HAVE_LIBEWF_ERROR_BACKTRACE_FPRINT
+
+/* Do we have libewf.h? */
+#undef HAVE_LIBEWF_H
+
+/* Define to 1 if you have the `libewf_handle_get_utf8_header_value_notes'
+   function. */
+#undef HAVE_LIBEWF_HANDLE_GET_UTF8_HEADER_VALUE_NOTES
+
+/* Define to 1 if you have the `expat' library (-lexpat). */
+#undef HAVE_LIBEXPAT
+
+/* Define to 1 if you have the <libgen.h> header file. */
+#undef HAVE_LIBGEN_H
+
+/* Define to 1 if you have the `hashdb' library (-lhashdb). */
+#undef HAVE_LIBHASHDB
+
+/* Define to 1 if you have the `iconv' library (-liconv). */
+#undef HAVE_LIBICONV
+
+/* Define to 1 if you have liblightgrep. */
+#undef HAVE_LIBLIGHTGREP
+
+/* Define to 1 if you have the `m' library (-lm). */
+#undef HAVE_LIBM
+
+/* Define to 1 if you have the `pthreadGC2' library (-lpthreadGC2). */
+#undef HAVE_LIBPTHREADGC2
+
+/* Define to 1 if you have the `regex' library (-lregex). */
+#undef HAVE_LIBREGEX
+
+/* Define to 1 if you have the `sceadan' library (-lsceadan). */
+#undef HAVE_LIBSCEADAN
+
+/* Define to 1 if you have the `sqlite3' library (-lsqlite3). */
+#undef HAVE_LIBSQLITE3
+
+/* Define to 1 if you have the `ssl' library (-lssl). */
+#undef HAVE_LIBSSL
+
+/* Define to 1 if you have the `stdc++' library (-lstdc++). */
+#undef HAVE_LIBSTDC__
+
+/* Define to 1 if you have the `tre' library (-ltre). */
+#undef HAVE_LIBTRE
+
+/* Define to 1 if you have the `z' library (-lz). */
+#undef HAVE_LIBZ
+
+/* Define to 1 if you have the <limits.h> header file. */
+#undef HAVE_LIMITS_H
+
+/* Define to 1 if you have the `LoadLibrary' function. */
+#undef HAVE_LOADLIBRARY
+
+/* Define to 1 if you have the `localtime_r' function. */
+#undef HAVE_LOCALTIME_R
+
+/* Define to 1 if you have the <malloc.h> header file. */
+#undef HAVE_MALLOC_H
+
+/* define the output file using global variable MALLOC_TRACE, for example
+   "MALLOC_TRACE=./mcheck.out; export MALLOC_TRACE". Then post-process
+   unreadable file mcheck.out using the mtrace command line tool, for example
+   "mtrace /usr/local/bin/bulk_extractor mcheck.out". Unfortunately, only
+   addresses with written code are looked up, in otherwords, use of malloc is
+   looked up, but use of new is not. */
+#undef HAVE_MCHECK
+
+/* Define to 1 if you have the `MD5' function. */
+#undef HAVE_MD5
+
+/* Define to 1 if you have the <memory.h> header file. */
+#undef HAVE_MEMORY_H
+
+/* Indicates that we have the -Wmissing-format-attribute G++ warning */
+#undef HAVE_MISSING_FORMAT_ATTRIBUTE_WARNING
+
+/* Define to 1 if you have the `mkstemp' function. */
+#undef HAVE_MKSTEMP
+
+/* Define to 1 if you have the `mktemp' function. */
+#undef HAVE_MKTEMP
+
+/* Define to 1 if you have the `mmap' function. */
+#undef HAVE_MMAP
+
+/* Define to 1 if you have the <mmap.h> header file. */
+#undef HAVE_MMAP_H
+
+/* Define to 1 if you have the `munmap' function. */
+#undef HAVE_MUNMAP
+
+/* Define to 1 if you have the <netinet/in.h> header file. */
+#undef HAVE_NETINET_IN_H
+
+/* Define to 1 if you have the <netinet/ip.h> header file. */
+#undef HAVE_NETINET_IP_H
+
+/* Define to 1 if you have the <openssl/aes.h> header file. */
+#undef HAVE_OPENSSL_AES_H
+
+/* Define to 1 if you have the <openssl/bio.h> header file. */
+#undef HAVE_OPENSSL_BIO_H
+
+/* Define to 1 if you have the <openssl/evp.h> header file. */
+#undef HAVE_OPENSSL_EVP_H
+
+/* Define to 1 if you have the <openssl/hmac.h> header file. */
+#undef HAVE_OPENSSL_HMAC_H
+
+/* Define to 1 if you have the <openssl/md5.h> header file. */
+#undef HAVE_OPENSSL_MD5_H
+
+/* Define to 1 if you have the <openssl/pem.h> header file. */
+#undef HAVE_OPENSSL_PEM_H
+
+/* Define to 1 if you have the <openssl/rand.h> header file. */
+#undef HAVE_OPENSSL_RAND_H
+
+/* Define to 1 if you have the <openssl/rsa.h> header file. */
+#undef HAVE_OPENSSL_RSA_H
+
+/* Define to 1 if you have the <openssl/sha.h> header file. */
+#undef HAVE_OPENSSL_SHA_H
+
+/* Define to 1 if you have the <openssl/x509.h> header file. */
+#undef HAVE_OPENSSL_X509_H
+
+/* Define to 1 if you have the `pread' function. */
+#undef HAVE_PREAD
+
+/* Define to 1 if you have the `pread64' function. */
+#undef HAVE_PREAD64
+
+/* Define to 1 if you have the `printf' function. */
+#undef HAVE_PRINTF
+
+/* Define if you have POSIX threads libraries and header files. */
+#undef HAVE_PTHREAD
+
+/* Define to 1 if you have the <pthread.h> header file. */
+#undef HAVE_PTHREAD_H
+
+/* Have PTHREAD_PRIO_INHERIT. */
+#undef HAVE_PTHREAD_PRIO_INHERIT
+
+/* Define to 1 if you have the `pthread_win32_process_attach_np' function. */
+#undef HAVE_PTHREAD_WIN32_PROCESS_ATTACH_NP
+
+/* Define to 1 if you have the `pthread_win32_process_detach_np' function. */
+#undef HAVE_PTHREAD_WIN32_PROCESS_DETACH_NP
+
+/* Define to 1 if you have the `pthread_win32_thread_attach_np' function. */
+#undef HAVE_PTHREAD_WIN32_THREAD_ATTACH_NP
+
+/* Define to 1 if you have the `pthread_win32_thread_detach_np' function. */
+#undef HAVE_PTHREAD_WIN32_THREAD_DETACH_NP
+
+/* Define to 1 if you have the <pwd.h> header file. */
+#undef HAVE_PWD_H
+
+/* Define to 1 if you have the `random' function. */
+#undef HAVE_RANDOM
+
+/* Define to 1 if you have the `regcomp' function. */
+#undef HAVE_REGCOMP
+
+/* Define to 1 if you have the <regex.h> header file. */
+#undef HAVE_REGEX_H
+
+/* Define to 1 if you have the <signal.h> header file. */
+#undef HAVE_SIGNAL_H
+
+/* Define to 1 if you have the `sleep' function. */
+#undef HAVE_SLEEP
+
+/* Define to 1 if you have the `SleepEx' function. */
+#undef HAVE_SLEEPEX
+
+/* Do we have sockaddr.sin_len? */
+#undef HAVE_SOCKADDR_IN_SIN_LEN
+
+/* Define to 1 if you have the `sqlite3_create_function_v2' function. */
+#undef HAVE_SQLITE3_CREATE_FUNCTION_V2
+
+/* Define to 1 if you have the <sqlite3.h> header file. */
+#undef HAVE_SQLITE3_H
+
+/* Define to 1 if you have the `srandom' function. */
+#undef HAVE_SRANDOM
+
+/* Define to 1 if you have the `srandomdev' function. */
+#undef HAVE_SRANDOMDEV
+
+/* Define to 1 if you have the <stdarg.h> header file. */
+#undef HAVE_STDARG_H
+
+/* Define to 1 if you have the <stdint.h> header file. */
+#undef HAVE_STDINT_H
+
+/* Define to 1 if you have the <stdio.h> header file. */
+#undef HAVE_STDIO_H
+
+/* Define to 1 if you have the <stdlib.h> header file. */
+#undef HAVE_STDLIB_H
+
+/* We have the Standard Template Library */
+#undef HAVE_STL
+
+/* Define to 1 if you have the <string> header file. */
+#undef HAVE_STRING
+
+/* Define to 1 if you have the <strings.h> header file. */
+#undef HAVE_STRINGS_H
+
+/* Define to 1 if you have the <string.h> header file. */
+#undef HAVE_STRING_H
+
+/* Define to 1 if you have the `strptime' function. */
+#undef HAVE_STRPTIME
+
+/* Define to 1 if you have the <sys/cdefs.h> header file. */
+#undef HAVE_SYS_CDEFS_H
+
+/* Define to 1 if you have the <sys/disk.h> header file. */
+#undef HAVE_SYS_DISK_H
+
+/* Define to 1 if you have the <sys/fcntl.h> header file. */
+#undef HAVE_SYS_FCNTL_H
+
+/* Define to 1 if you have the <sys/ioctl.h> header file. */
+#undef HAVE_SYS_IOCTL_H
+
+/* Define to 1 if you have the <sys/mman.h> header file. */
+#undef HAVE_SYS_MMAN_H
+
+/* Define to 1 if you have the <sys/mmap.h> header file. */
+#undef HAVE_SYS_MMAP_H
+
+/* Define to 1 if you have the <sys/mount.h> header file. */
+#undef HAVE_SYS_MOUNT_H
+
+/* Define to 1 if you have the <sys/param.h> header file. */
+#undef HAVE_SYS_PARAM_H
+
+/* Define to 1 if you have the <sys/resource.h> header file. */
+#undef HAVE_SYS_RESOURCE_H
+
+/* Define to 1 if you have the <sys/socket.h> header file. */
+#undef HAVE_SYS_SOCKET_H
+
+/* Define to 1 if you have the <sys/stat.h> header file. */
+#undef HAVE_SYS_STAT_H
+
+/* Define to 1 if you have the <sys/sysctl.h> header file. */
+#undef HAVE_SYS_SYSCTL_H
+
+/* Define to 1 if you have the <sys/time.h> header file. */
+#undef HAVE_SYS_TIME_H
+
+/* Define to 1 if you have the <sys/types.h> header file. */
+#undef HAVE_SYS_TYPES_H
+
+/* Define to 1 if you have the <sys/utsname.h> header file. */
+#undef HAVE_SYS_UTSNAME_H
+
+/* Define to 1 if you have the <time.h> header file. */
+#undef HAVE_TIME_H
+
+/* Define to 1 if you have the <tr1/unordered_map> header file. */
+#undef HAVE_TR1_UNORDERED_MAP
+
+/* Define to 1 if you have the <tr1/unordered_set> header file. */
+#undef HAVE_TR1_UNORDERED_SET
+
+/* Define to 1 if you have the `tre_regcomp' function. */
+#undef HAVE_TRE_REGCOMP
+
+/* Define to 1 if you have the <tre/tre.h> header file. */
+#undef HAVE_TRE_TRE_H
+
+/* Define to 1 if you have the `tre_version' function. */
+#undef HAVE_TRE_VERSION
+
+/* Define to 1 if you have the <unistd.h> header file. */
+#undef HAVE_UNISTD_H
+
+/* Define to 1 if you have the <unordered_map> header file. */
+#undef HAVE_UNORDERED_MAP
+
+/* Define to 1 if you have the <unordered_set> header file. */
+#undef HAVE_UNORDERED_SET
+
+/* Define to 1 if you have the `usleep' function. */
+#undef HAVE_USLEEP
+
+/* Define to 1 if you have the `utimes' function. */
+#undef HAVE_UTIMES
+
+/* Define to 1 if you have the `vasprintf' function. */
+#undef HAVE_VASPRINTF
+
+/* Define to 1 if you have the `warn' function. */
+#undef HAVE_WARN
+
+/* Define to 1 if you have the `warnx' function. */
+#undef HAVE_WARNX
+
+/* Define to 1 if you have the <windows.h> header file. */
+#undef HAVE_WINDOWS_H
+
+/* Define to 1 if you have the <winsock2.h> header file. */
+#undef HAVE_WINSOCK2_H
+
+/* Define to 1 if you have the <wsipx.h> header file. */
+#undef HAVE_WSIPX_H
+
+/* Define to 1 if you have the `_lseeki64' function. */
+#undef HAVE__LSEEKI64
+
+/* define 1 if __sync_add_and_fetch works on 64-bit numbers */
+#undef HAVE___SYNC_ADD_AND_FETCH
+
+/* Define to 1 if your C compiler doesn't accept -c and -o together. */
+#undef NO_MINUS_C_MINUS_O
+
+/* Name of package */
+#undef PACKAGE
+
+/* Define to the address where bug reports for this package should be sent. */
+#undef PACKAGE_BUGREPORT
+
+/* Define to the full name of this package. */
+#undef PACKAGE_NAME
+
+/* Define to the full name and version of this package. */
+#undef PACKAGE_STRING
+
+/* Define to the one symbol short name of this package. */
+#undef PACKAGE_TARNAME
+
+/* Define to the home page for this package. */
+#undef PACKAGE_URL
+
+/* Define to the version of this package. */
+#undef PACKAGE_VERSION
+
+/* Define to necessary symbol if this constant uses a non-standard name on
+   your system. */
+#undef PTHREAD_CREATE_JOINABLE
+
+/* Define to 1 if you have the ANSI C header files. */
+#undef STDC_HEADERS
+
+/* Use LIGHTGREP */
+#undef USE_LIGHTGREP
+
+/* Use RAR decompression */
+#undef USE_RAR
+
+/* Use SCEADAN FILE TYPE CLASSIFIER */
+#undef USE_SCEADAN
+
+/* Version number of package */
+#undef VERSION
+
+/* Define WORDS_BIGENDIAN to 1 if your processor stores words with the most
+   significant byte first (like Motorola and SPARC, unlike Intel). */
+#if defined AC_APPLE_UNIVERSAL_BUILD
+# if defined __BIG_ENDIAN__
+#  define WORDS_BIGENDIAN 1
+# endif
+#else
+# ifndef WORDS_BIGENDIAN
+#  undef WORDS_BIGENDIAN
+# endif
+#endif
+
+/* Define to 1 if `lex' declares `yytext' as a `char *' by default, not a
+   `char[]'. */
+#undef YYTEXT_POINTER
+
+/* Enable large inode numbers on Mac OS X 10.5.  */
+#ifndef _DARWIN_USE_64_BIT_INODE
+# define _DARWIN_USE_64_BIT_INODE 1
+#endif
+
+/* Number of bits in a file offset, on hosts where this is settable. */
+#undef _FILE_OFFSET_BITS
+
+/* Define for large files, on AIX-style hosts. */
+#undef _LARGE_FILES
+
+/* Linux operating system functions */
+#undef __LINUX__
+
+/* Define to the type of a signed integer type of width exactly 64 bits if
+   such a type exists and the standard includes do not define it. */
+#undef int64_t

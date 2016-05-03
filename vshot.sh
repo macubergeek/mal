@@ -12,7 +12,7 @@ version="4.01"
 
 ### CONFIGURATION ##########################################################################################
 ## Path to volatility ##
-volpath="/usr/bin/volatility"
+volpath="/usr/local/bin/vol.py"
 ## Path to bulk_extractor ##
 ## If you do not wish to have bulk_extractor on your system replace the path with an application that exists
 ## - bulkpath="/bin/echo" 
