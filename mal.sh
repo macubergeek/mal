@@ -5,6 +5,7 @@ https://github.com/Yara-Rules/rules.git
 https://github.com/volatilityfoundation/volatility.git
 https://github.com/cuckoosandbox/community.git
 https://github.com/cuckoosandbox/cuckoo.git
+https://github.com/spender-sandbox/cuckoo-modified.git
 https://github.com/buguroo/cuckooautoinstall.git
 https://github.com/ChrisTruncer/Just-Metadata.git
 https://github.com/buguroo/cuckooautoinstall.git
