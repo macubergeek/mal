@@ -16,3 +16,4 @@ for i in $a
 do
 git clone $i
 done
+wget http://digitalcorpora.org/downloads/bulk_extractor/bulk_extractor-1.5.5.tar.gz
