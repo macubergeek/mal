@@ -5,3 +5,5 @@ sudo git clone https://github.com/gdabah/distorm.git
 cd distorm
 sudo python setup.py build
 sudo python setup.py build install
+cd ..
+sudo make && sudo make install
