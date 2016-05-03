@@ -8,6 +8,7 @@ https://github.com/cuckoosandbox/cuckoo.git
 https://github.com/buguroo/cuckooautoinstall.git
 https://github.com/ChrisTruncer/Just-Metadata.git
 https://github.com/buguroo/cuckooautoinstall.git
+https://github.com/504ensicsLabs/DAMM.git
 EOF`
 cd /opt
 for i in $a
