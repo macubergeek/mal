@@ -1,2 +1,0 @@
-bagarwal@ftc.gov
-http://10.228.150.75:8080/.*
