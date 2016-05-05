@@ -1,0 +1,29 @@
+To build a cuckoo sandbox please follow these steps.
+
+1. Install either Kali rolling or Ubuntu 14 LTS on a box not a vm.  The reason you don’t
+want to install on vm is because cuckoo gets confused when you run the virtualbox vm inside
+another vm. I tend to prefer Kali.
+
+2. Run the prep.sh script. This will install the dependencies you will need going forward.
+
+3. Run the mal.sh script this will pull latest github versions of volatility yara etc.
+
+4. cd /opt/cuckooautoinstall and do bash *.bash. This will install cuckoo v2.-dev. Now this
+is not the very latest version of cuckoo (which is 2.0 RC1). I’ve submitted a ticket on
+their github to update it to RC1. The dev version should get you started. It will also
+install virtualbox.
+
+5. copy yara-install.sh into /opt/yara and run it and do make, make install.
+
+6. copy volatility-install.sh into /opt/volatility and run it and do make make install.
+
+Above two steps will give you latest latest versions of these tools.
+
+NOTE: I’ve included cuckoo-current.tar in the mal directory. This is the latest RC1 version
+of cuckoo. I’ve included it just for completeness. Just use the version the autoinstall
+script installs at first.
+
+NOTE: create, configure and launch the virtualbox Windows VM BEFORE you launch cuckoo (by
+running cuckoo.py ). The autoinstall script will create a user cuckoo and drop the cuckoo
+directory in that user’s home directory. You run cuckoo by su’ing to cuckoo && cd ~/cuckoo
+and ./cuckoo.py there.
