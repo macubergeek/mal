@@ -1,0 +1,158 @@
+/* 
+Yara Users Manual used to create this CheatSheet can be found here:
+https://googledrive.com/host/0BznOMqZ9f3VUek8yN3VvSGdhRFU/YARA-Manual.pdf
+/*
+
+Yara Usage:
+
+	usage: yara [OPTION]... RULES_FILE FILE | PID!
+	options:!
+		-t <tag> print rules tagged as <tag> and ignore the rest. !
+		-i <identifier> print rules named <identifier> and ignore the rest.!
+		-n print only not satisfied rules (negate).!
+		-g print tags.!
+		-m print metadata.!
+		-s print matching strings.!
+		-p <number> use the specified <number> of threads to scan a directory.!
+		-l <number> abort scanning after matching a number of rules.!
+		-a <seconds> abort scanning after a number of seconds has elapsed.!
+		-d <identifier>=<value> define external variable.!
+		-r recursively search directories.!
+		-f fast matching mode.!
+		-w disable warnings.!
+		-v show version information.!
+
+Example Rule:
+
+	rule Rule_Name : tag1 tag2 // name of the rule followed by : tags
+	{
+
+ 	meta: // Useful meta information examples to add
+ 		description = "Description"
+      		author = "Tyler Halfpop" 
+      		reference = "http://www.tylerhalfpop.com"
+      		os = "mswindows"
+      		filetype = "pe"
+      		maltype = "trojan"
+      		date = "2014-07"
+      		md5 = "44d88612fea8a8f36de82e1278abb02f" 
+ 	
+ 	strings:
+		$text_string = "text here" nocase wide ascii fullword
+		/* 
+		text string - 
+			nocase = case insensitive
+			wide 2 bytes per char
+			ascii needed only with wide to search ascii as well
+			fullword matches only if delimited by non-alphanumeric characters
+		*/
+		
+		$hex_string = { EB FE [2-4] ?? (13 37 | 73 31 }
+		/*
+		hex string - ? wild card, [2-4] arbitrary bytes, (x | y) = (x or y)
+		*/
+
+		$reg_ex = /md5: [0-9a-zA-Z]{32}/
+		/*
+		string modifiers nocase, wide, ascii, and fullword can be used
+		\ Quote the next metacharacter
+		^ Match the beginning of the file
+		$ Match the end of the file
+		| Alternation
+		() Grouping
+		[] Bracketed character class
+		* Match 0 or more times
+		+ Match 1 or more times
+		? Match 0 or 1 times
+		{n} Match exactly n times
+		{n,} Match at least n times
+		{,m} Match 0 to m times
+		{n,m} Match n to m times
+		*? Match 0 or more times, non-greedy
+		+? Match 1 or more times, non-greedy
+		?? Match 0 or 1 timetimes, non-greedy
+		{n}? Match exactly n times, non-greedy
+		{n,}? Match at least n times, non-greedy
+		{,m}? Match 0 to m times, non-greedy
+		{n,m}? Match n to m times, non-greedy
+		\t Tab (HT, TAB)
+		\n New line (LF, NL)
+		\r Return (CR)
+		\f Form feed (FF)
+		\a Alarm bell (BEL)
+		\x00 Character whose ordinal number is the given
+		hexadecimal number
+		\w Match a “word” character (aphanumeric plus “_”)
+		\W Match a non-“word” character
+		\s Match a whitespace character
+		\S Match a non-whitespace character
+		\d Match a decimal digit character
+		\D Match a non-digit character
+		*/
+
+	condition: 
+		/* 
+		Boolean operators and, or and not
+		Relational operators >=, <=, <, >, == and !=
+		Arithmetic operators (+,-,*,\, %)
+		Bitwise operators (&, |, <<, >>, ~, ^)
+		/*
+
+ 		$txt_string or ($hex_string and $reg_ex) 
+ 		$txt_string = 3 or $reg_ex < 7
+ 		$hex_string at 300 or $hex_string in (700...filesize) // found at x offset or in range x...y
+
+ 		filesize < 10000KB  // filesize special variable
+ 		$hex_string at entrypoint // match at executables entry point
+
+ 		/*
+ 		Data at position
+ 		int8(<offset or virtual address>)
+		int16(<offset or virtual address>)
+		int32(<offset or virtual address>)
+		uint8(<offset or virtual address>)
+		uint16(<offset or virtual address>)
+		uint32(<offset or virtual address>)
+		*/
+
+		//Sets of Strings
+		all of them // all strings in the rule
+		any of them // any string in the rule
+		all of ($a*) //all strings whose identifier starts by $a
+		any of ($a,$b,$c) // any of $a, $b or $c
+		1 of ($*) // same that "any of them"
+		
+		for any of ($a,$b,$c) : ( $ at entrypoint ) // Applies expression to multiple strings
+
+		3 of them // matches any x of the strings
+
+		for all i in (1,2,3) : (@a[i] + 10 == @b[i])!
+		/* 
+		Iterate over string occurences to match first three occurrences of $b should be 10 bytes away from the first three
+		occurrences of $a.
+		/*
+
+		$a in Rule_Other // reference other rules
+
+		ext_var matches /[a-z]+/ or ext_var contains "text" // reference external variable
+
+		include "./includes/other.yar"! // include other rule files
+
+ 		// Useful conditions to check if file is a PE
+		uint16(0) == 0x5A4D and // MZ signature at offset 0 and 
+		uint32(uint32(0x3C)) == 0x00004550 // PE signature at offset stored in MZ header at 0x3C!
+	}
+
+YARA-PYTHON
+
+	import yara
+
+	rules = yara.compile(filepath='/foo/bar/myrules') #compile rules
+
+	rules.save('/foo/bar/my_compiled_rules') 
+	# save returned class to create binary for distribution
+	
+	rules = yara.load('/foo/bar/my_compiled_rules') # load a saved compiled list
+
+	matches = rules.match('/foo/bar/my_file') # match rules against file
+	matches = rules.match(pid=1234) # match rules against a PIDds

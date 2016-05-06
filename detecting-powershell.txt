@@ -1,0 +1,11 @@
+Detecting bad stuff.
+So, how do we detect bad stuff?
+
+If powershell is not used in your environment – look for any signs of powershell usage, such
+as Prefetch files, powershell processes, shim cache entries of powershell etc. Also look for
+wsmprovhost process in addition to powershell.
+
+Another option would be monitoring for a new processes that run powershell with -enc option,
+since there is not much legitimate usage of encoded scripts that I know of, this will be
+highly suspicious. On the other hand every malicious payload I saw was in form of base64
+encoded script.
